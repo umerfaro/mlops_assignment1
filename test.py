@@ -1,6 +1,7 @@
 import unittest
 from app import app
 
+
 class FlaskAppTestCase(unittest.TestCase):
 
     def setUp(self):
@@ -16,4 +17,3 @@ class FlaskAppTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-  
