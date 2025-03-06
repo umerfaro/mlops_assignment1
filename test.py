@@ -2,6 +2,7 @@ import unittest
 from app import app
 
 class FlaskAppTestCase(unittest.TestCase):
+
     def setUp(self):
         # Create a test client
         self.client = app.test_client()
@@ -12,5 +13,7 @@ class FlaskAppTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Welcome to the Flask App!', response.data)
 
+
 if __name__ == '__main__':
     unittest.main()
+    
